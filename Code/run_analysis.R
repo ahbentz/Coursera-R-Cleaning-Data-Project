@@ -57,4 +57,4 @@ a <- aggregate(subSetActivities[,2:(length(subSetActivities) - 3)], by = list(su
 
 names(a) <- c("activityName", "sub", names(a[3:length(a)]))
 
-write.csv(a, file="Output/activity_subject_means.csv")
+write.table(a, file="Output/activity_subject_means.txt", row.name=FALSE)
